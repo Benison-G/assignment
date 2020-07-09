@@ -23,7 +23,7 @@ function HackerNews() {
      * @param {string} id The unique identifier of the list item(object);
      */
     function upVote(id) {
-        const elementsIndex = items.findIndex(element => element.objectID == id )
+        const elementsIndex = items.findIndex(element => element.objectID === id )
         items[elementsIndex].voteCount++;
         setItems([...items]);
     }
