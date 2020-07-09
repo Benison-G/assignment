@@ -25,6 +25,8 @@ function HackerNews() {
     function upVote(id) {
         const elementsIndex = items.findIndex(element => element.objectID === id )
         items[elementsIndex].voteCount++;
+        // one of its values but it's still the same array, so React will not re-render as the state hasn't changed. 
+        // The new array is still the old array. So using spread operator to avoid this behaviour.
         setItems([...items]);
     }
 
