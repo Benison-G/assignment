@@ -14,10 +14,23 @@ function HackerNews() {
      * Will be executed only once on initial render(once the component mounts)
      */
     useEffect(() => {
-        Axios.get('https://hn.algolia.com/api/v1/search?tags=front_page').then(response => {
-            setItems(response.data.hits.map(obj=> ({ ...obj, voteCount: 0 })));
-        });
+        // Get the items from the localStorage if the component is refreshed otherwise call API
+        const storedData = JSON.parse(localStorage.getItem("items"));
+        if(!storedData) {
+            Axios.get('https://hn.algolia.com/api/v1/search?tags=front_page').then(response => {
+                const serviceResponse = response.data.hits.map(obj=> ({ ...obj, voteCount: 0 }));
+                localStorage.setItem("items", JSON.stringify(serviceResponse));
+                setItems(serviceResponse);
+            });
+        } else {
+            setItems(storedData);
+        }
     }, []);
+
+    // Updates the localStorage on every state change.
+    useEffect(() => {
+        localStorage.setItem("items", JSON.stringify(items));
+    })
 
     /**
      * Increments the vote count
