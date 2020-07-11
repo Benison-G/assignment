@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Axios from 'axios';
 import './TableRows.scss';
+import Graph from './Graph';
 
 /**
  * Component to render the Front Page of the application
@@ -74,11 +75,22 @@ function HackerNews() {
          </tr>
          <tr>
             <td style={{ borderTop: "2px solid #ff6600", borderBottom: "4px solid #ff6600" }}>
-                <div style={{ height: "300px" }}></div>
+                {/* <Graph data={getGraphPoints(items)}/> */}
             </td>
          </tr>
       </table>
     );
+}
+
+function getGraphPoints(items) {
+    const points = [];
+    items.map(item => {
+        const obj = {}
+        obj.x = item.objectID;
+        obj.y = item.voteCount;
+        points.push(obj);
+    })
+    return points;
 }
 
 export default HackerNews;
