@@ -1,0 +1,169 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HackerNews component render 1`] = `
+<table>
+  <tr>
+    <td>
+      <table>
+        <tr
+          bgcolor="#ff6600"
+          style={
+            Object {
+              "color": "white",
+              "fontWeight": "bold",
+            }
+          }
+        >
+          <td>
+             Comments 
+          </td>
+          <td>
+             Vote Count
+          </td>
+          <td>
+             Upvote
+          </td>
+          <td>
+             News Details
+          </td>
+        </tr>
+        <tr
+          className="table-rows"
+        >
+          <td>
+            20
+          </td>
+          <td>
+            20
+          </td>
+          <td>
+            <div
+              onClick={[Function]}
+              style={
+                Object {
+                  "borderBottom": "10px solid grey",
+                  "borderLeft": "5px solid transparent",
+                  "borderRight": "5px solid transparent",
+                  "borderTop": 0,
+                  "height": 0,
+                  "width": 0,
+                }
+              }
+            />
+          </td>
+          <td>
+            my post
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td
+      style={
+        Object {
+          "color": "#ff6600",
+          "fontWeight": "bold",
+          "padding": "5px",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "float": "right",
+          }
+        }
+      >
+        <span>
+          Previous 
+        </span>
+        |
+        <span>
+           Next
+        </span>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td
+      style={
+        Object {
+          "borderBottom": "4px solid #ff6600",
+          "borderTop": "2px solid #ff6600",
+        }
+      }
+    />
+  </tr>
+</table>
+`;
+
+exports[`app component render 1`] = `
+<table>
+  <tr>
+    <td>
+      <table>
+        <tr
+          bgcolor="#ff6600"
+          style={
+            Object {
+              "color": "white",
+              "fontWeight": "bold",
+            }
+          }
+        >
+          <td>
+             Comments 
+          </td>
+          <td>
+             Vote Count
+          </td>
+          <td>
+             Upvote
+          </td>
+          <td>
+             News Details
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td
+      style={
+        Object {
+          "color": "#ff6600",
+          "fontWeight": "bold",
+          "padding": "5px",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "float": "right",
+          }
+        }
+      >
+        <span>
+          Previous 
+        </span>
+        |
+        <span>
+           Next
+        </span>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td
+      style={
+        Object {
+          "borderBottom": "4px solid #ff6600",
+          "borderTop": "2px solid #ff6600",
+        }
+      }
+    />
+  </tr>
+</table>
+`;
