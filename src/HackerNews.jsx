@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Axios from 'axios';
 import './TableRows.scss';
-import Graph from './Graph';
 
 /**
  * Component to render the Front Page of the application
