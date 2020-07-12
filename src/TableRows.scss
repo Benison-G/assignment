@@ -5,3 +5,10 @@
 .table-rows:nth-child(odd) {
     background-color:  #f6f6ef;
 }
+
+table {
+    border: 0; 
+    border-spacing: 0;
+    width: 100%;
+    text-align: left;
+}
