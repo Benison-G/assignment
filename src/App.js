@@ -42,19 +42,8 @@ function App() {
   }
 
   return (
-   <HackerNews items={items} upVote={upVote} points={getGraphPoints(items)}/>
+   <HackerNews items={items} upVote={upVote}/>
   );
-}
-
-function getGraphPoints(items) {
-    let points = [];
-    items.map(item => {
-        let obj = {};
-        obj.x = parseInt(item.objectID);
-        obj.y = item.voteCount;
-        points.push(obj);
-    })
-    return points;
 }
 
 export default App;

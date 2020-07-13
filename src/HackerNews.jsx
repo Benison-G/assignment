@@ -1,6 +1,5 @@
 import React from 'react';
 import './TableRows.scss';
-import LineChart from 'react-svg-line-chart';
 
 /**
  * Component to render the Front Page of the application
@@ -49,12 +48,8 @@ function HackerNews(props) {
                 </td>
             </tr>
             <tr>
-                <td style={{ borderTop: "2px solid #ff6600", borderBottom: "4px solid #ff6600", padding: "20px" }}>
-                    <LineChart
-                        data={props.points}
-                        labelsStepX={20000}
-                        labelsOffsetX={100}
-                    />
+                <td style={{ borderTop: "2px solid #ff6600", borderBottom: "4px solid #ff6600" }}>
+                    {/* <Graph data={getGraphPoints(props.item)}/> */}
                 </td>
             </tr>
       </table>
