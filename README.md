@@ -7,7 +7,7 @@ https://hn.algolia.com/api/v1/search?tags=front_page
 Implemented:
 `React hooks`
 `persist vote count on page refresh`
-`Server side rendering`
+`Server side rendering`   
 `unit tests`
 
 Lighthouse performance
